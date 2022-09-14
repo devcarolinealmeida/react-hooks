@@ -10,10 +10,10 @@ const ExempleUseState = () => {
     setCount((prevState) => prevState + 1)
   }
   return ( 
-    <div>
-      <h1>{count}</h1>
+    <div className="m-10 justify-center items-center flex">
+      <h1 className="font-bold mr-5 bg-red-300 px-3 py-2 rounded">{count}</h1>
       {/* When the user clicks, we call incrementCount, and thats will render setCount with a new value. React will then re-render the Example component, passing the new count value to it. */}
-      <button onClick={incrementCount}>Increment</button>
+      <button className="p-2 bg-slate-500 text-white rounded hover:bg-slate-800" onClick={incrementCount}>Increment</button>
     </div>
    );
 }
