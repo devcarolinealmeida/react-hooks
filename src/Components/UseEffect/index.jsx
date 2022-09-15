@@ -23,8 +23,10 @@ const ExempleUseEffect = () => {
     }
 
     return ( 
-        <div className="mt-10 w-96">
-            <h1 className="font-bold text-center border-slate-500 border-2 rounded">{resourceType}</h1>
+        <section className="border border-slate-500 rounded p-2 mt-2">
+            <h1 className="font-bold m-2">UseEffect Example</h1>
+            <div className="mt-10 w-96">
+            <h1 className="font-bold text-center border-slate-500 border-2 rounded mb-2">{resourceType}</h1>
             <div className="flex justify-between">
                 <button onClick={() => changeResourseType("Posts")} 
                 className="my-1 p-2 bg-slate-500 text-white rounded hover:bg-slate-800">Posts</button>
@@ -39,6 +41,8 @@ const ExempleUseEffect = () => {
                 ))}
             </div>
         </div>
+        </section>
+        
      );
 }
  
